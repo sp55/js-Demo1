@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>在标签中添加js</title>
+	<style>
+	/*设置输入键盘的大小*/
+		input{
+			width: 100px;
+			height: 50px;
+		}
+	</style>
+</head>
+<body>
+	<!--//前两种js-第三种在.js中*/-->
+	 <input type="button" value="test1" onclick="alert('js test')">
+	 <input type="button" value="test2" onclick="fun2()">
+	 <script>
+	 //这里是定义的一个js函数，函数的功能就是把要处理的事封装
+	 //提升代码的利用率
+	 	function fun2(){
+	 		document.write("hahahahhaha")//在网页文档输入文字内容
+			alert("我来了");
+	 	}
+	 </script>
+	 <!--第三种 加载外部的js文件 低耦合-->
+	 <script src="test.js"></script>
+	 
+</body>
+
+</html>
